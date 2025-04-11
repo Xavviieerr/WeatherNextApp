@@ -13,7 +13,7 @@ export async function GET(request: any) {
       "https://api.openweathermap.org/data/2.5/weather?q=" +
       address +
       "&appid=" +
-      "a1facf01945d6bad6c26c610489d5a74";
+      "";
   } else {
     url =
       "https://api.openweathermap.org/data/2.5/weather?lat=" +
@@ -21,7 +21,7 @@ export async function GET(request: any) {
       "&lon=" +
       longitude +
       "&appid=" +
-      "a1facf01945d6bad6c26c610489d5a74";
+      "";
   }
 
   const response = fetch(url);
